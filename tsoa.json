@@ -1,0 +1,20 @@
+{
+  "entryFile": "src/server.ts",
+  "controllerPathGlobs": [
+    "src/app/**/controller.ts"
+  ],
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "spec": {
+    "outputDirectory": "public",
+    "specVersion": 3,
+    "securityDefinitions": {
+      "bearerAuth": {
+        "type": "http",
+        "name": "authorization",
+        "in": "headers",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
